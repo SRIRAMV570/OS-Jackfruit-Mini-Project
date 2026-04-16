@@ -16,15 +16,14 @@ modules.order
 *.cmd
 .tmp_versions/
 
-# Root filesystems - structure tracked with .gitkeep, but exclude base and large files
+# Root filesystems
 rootfs-base/
-!boilerplate/rootfs-*/
-boilerplate/rootfs-*/**/*
-!boilerplate/rootfs-*/.gitkeep
 *.tar.gz
 
-# Logs - structure tracked with .gitkeep, but exclude log files
+# Logs - track folder structure, exclude log files
+logs/
 *.log
+!boilerplate/logs/
 !boilerplate/logs/.gitkeep
 
 # Runtime socket
